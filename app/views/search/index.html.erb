@@ -1,7 +1,7 @@
 <%= @stores.count %> Total Stores
 
 <% @stores.each do |store| %>
-<h3><%= link_to store.name, search_path(store.id) %> </h3>
+<h3><%= link_to store.name, store_path(store.id), {:controller => "stores", :action => "show", :store => store.id } %> </h3>
 <h5><%= store.city %></h5>
 <h5><%= store.distance %></h5> miles
 <h5><%= store.phone_number %></h5>

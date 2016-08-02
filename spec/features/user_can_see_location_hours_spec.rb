@@ -23,7 +23,7 @@ RSpec.feature "user can see location store hours" do
       fill_in :search, with: "80202"
       click_button "Submit"
       click_link("Cherry Creek Shopping Center")
-      expect(current_path).to eq("/stores/1224")
+      expect(current_path).to eq("/stores/2740")
       expect(page).to have_content("Cherry Creek Shopping Center")
       expect(page).to have_content("Address, Denver, 80123")
       expect(page).to have_content("* Mon: 10am-9pm (hours)")
