@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=krmeujcx6hn477xn5gma4pmn&format=json&pageSize=2&show=storeId,storeType,name
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=krmeujcx6hn477xn5gma4pmn&format=json&pageSize=25&show=storeId,storeType,name
     body:
       encoding: US-ASCII
       string: ''
@@ -21,13 +21,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 02 Aug 2016 15:53:24 GMT
+      - Tue, 02 Aug 2016 16:31:43 GMT
       Server:
       - thin 1.6.1 codename Death Proof
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-112.mashery.com
+      - prod-j-worker-us-east-1d-113.mashery.com
       Content-Length:
-      - '547'
+      - '1948'
       Connection:
       - keep-alive
     body:
@@ -35,12 +35,12 @@ http_interactions:
       string: |-
         {
           "from": 1,
-          "to": 2,
+          "to": 17,
           "total": 17,
           "currentPage": 1,
-          "totalPages": 9,
-          "queryTime": "0.005",
-          "totalTime": "0.015",
+          "totalPages": 1,
+          "queryTime": "0.006",
+          "totalTime": "0.018",
           "partial": false,
           "canonicalUrl": "/v1/stores(area(\"80202\",25))?show=storeId,storeType,name&format=json&apiKey=krmeujcx6hn477xn5gma4pmn",
           "stores": [
@@ -53,10 +53,85 @@ http_interactions:
               "storeId": 1224,
               "storeType": "BigBox",
               "name": "Belmar"
+            },
+            {
+              "storeId": 211,
+              "storeType": "BigBox",
+              "name": "Colorado Blvd"
+            },
+            {
+              "storeId": 382,
+              "storeType": "BigBox",
+              "name": "Denver West"
+            },
+            {
+              "storeId": 209,
+              "storeType": "BigBox",
+              "name": "Westminster"
+            },
+            {
+              "storeId": 2737,
+              "storeType": "Mobile",
+              "name": "Colorado Mills"
+            },
+            {
+              "storeId": 1416,
+              "storeType": "BigBox",
+              "name": "Northglenn"
+            },
+            {
+              "storeId": 2730,
+              "storeType": "Mobile",
+              "name": "Town Center at Aurora"
+            },
+            {
+              "storeId": 217,
+              "storeType": "BigBox",
+              "name": "Aurora"
+            },
+            {
+              "storeId": 210,
+              "storeType": "BigBox",
+              "name": "Littleton"
+            },
+            {
+              "storeId": 1171,
+              "storeType": "BigBox",
+              "name": "Southglenn"
+            },
+            {
+              "storeId": 1134,
+              "storeType": "BigBox",
+              "name": "I70 & Tower Rd"
+            },
+            {
+              "storeId": 2953,
+              "storeType": "Mobile",
+              "name": "Flatiron Crossing Mall "
+            },
+            {
+              "storeId": 164,
+              "storeType": "BigBox",
+              "name": "S.E. Denver"
+            },
+            {
+              "storeId": 694,
+              "storeType": "BigBox",
+              "name": "S.E. Aurora"
+            },
+            {
+              "storeId": 1410,
+              "storeType": "BigBox",
+              "name": "Parker"
+            },
+            {
+              "storeId": 1031,
+              "storeType": "BigBox",
+              "name": "Boulder"
             }
           ],
           "warnings": "Distances are in terms of miles (default)"
         }
     http_version: 
-  recorded_at: Tue, 02 Aug 2016 15:53:24 GMT
+  recorded_at: Tue, 02 Aug 2016 16:31:43 GMT
 recorded_with: VCR 3.0.3
