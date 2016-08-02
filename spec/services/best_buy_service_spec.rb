@@ -14,16 +14,4 @@ describe BestBuyService do
       end
     end
   end
-
-  # context "find_by_id" do
-  #   it "returns locations by store id" do
-  #     VCR.use_cassette("locations by id") do
-  #       store_id = "1224"
-  #       best_buy_service = BestBuyService.new
-  #       store = best_buy_service.find_by_id(store_id)
-  #       byebug
-  #       expect(store["storeId"]).to eq(store_id)
-  #     end
-  #   end
-  # end
 end
