@@ -19,6 +19,14 @@
       <li>
         <a href="/orders">Orders</a>
       </li>
+      <li>
+        <div class="nav navbar-form">
+          <%= form_tag(search_index_path, :method => "GET") do %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search By Zipcode", class: "form-control text-center" %>
+          <%= submit_tag "Submit", class:"btn btn-default" %>
+          <% end %>
+        </div>
+      </li>
     </ul>
   </div>
 </nav>
