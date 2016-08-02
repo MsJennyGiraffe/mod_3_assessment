@@ -1,1 +1,7 @@
-<%= @zipcode %>
+<% @stores.each do |store| %>
+<h3><%= store.name %></h3>
+<h5><%= store.city %></h5>
+<h5><%= store.distance %></h5>
+<h5><%= store.phone_number %></h5>
+<h5><%= store.type %></h5>
+<% end %>

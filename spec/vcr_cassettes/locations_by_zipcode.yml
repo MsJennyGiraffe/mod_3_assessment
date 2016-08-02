@@ -21,11 +21,11 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 02 Aug 2016 16:46:39 GMT
+      - Tue, 02 Aug 2016 17:12:30 GMT
       Server:
       - thin 1.6.1 codename Death Proof
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1e-105.mashery.com
+      - prod-j-worker-us-east-1b-121.mashery.com
       Content-Length:
       - '3344'
       Connection:
@@ -184,5 +184,5 @@ http_interactions:
           "warnings": "Distances are in terms of miles (default)"
         }
     http_version: 
-  recorded_at: Tue, 02 Aug 2016 16:46:40 GMT
+  recorded_at: Tue, 02 Aug 2016 17:12:31 GMT
 recorded_with: VCR 3.0.3

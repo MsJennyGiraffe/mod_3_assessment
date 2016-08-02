@@ -9,7 +9,7 @@ class Store
     @phone_number = phone_number
   end
 
-  def self.make_stores(zipcode, distance)
+  def self.make_stores(zipcode, distance=25)
     best_buy_service = BestBuyService.new
     locations = best_buy_service.find_by_location(zipcode, distance)
     locations["stores"].map do |store|
