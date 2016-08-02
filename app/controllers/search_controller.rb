@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    byebug
+    @zipcode = params[:search]
   end
 end
